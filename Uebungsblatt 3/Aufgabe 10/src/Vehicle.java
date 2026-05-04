@@ -1,19 +1,23 @@
 public abstract class Vehicle {
     private String licencePlate;
-    private static int currentVecicles = 0;
+    private static int vehicleCount = 0;
 
-    public Vehicle(String licencePlate) {
+    protected Vehicle(String licencePlate) {
         this.licencePlate = licencePlate;
-        currentVecicles++;
+        vehicleCount++;
     }
 
+    public abstract double getRentalPrice();
 
-    public abstract void rentValue();
+    public int getVehiclesCount() {
+        return vehicleCount;
+    }
 
-    public String getLicencePlate() { return this.licencePlate; }
-    public void setLicencePlate(String licencePlate) { this.licencePlate = licencePlate; }
+    public String getLicencePlate() {
+        return this.licencePlate;
+    }
 
-    public int getVehiclesCount() { return currentVecicles; }
-    public void setVehiclesCount (int number) { currentVecicles = number; }
-
+    public void setLicencePlate(String licencePlate) {
+        this.licencePlate = licencePlate;
+    }
 }
