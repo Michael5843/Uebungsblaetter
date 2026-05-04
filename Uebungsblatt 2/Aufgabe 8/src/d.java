@@ -23,7 +23,7 @@ public class d {
         System.out.println(
                 hiker.getName()
                         + " has hiked "
-                        + hiker.distanceCovered + "km + "
+                        + String.valueOf(hiker.distanceCovered) + "km + "
                         + "and"
                         + (hiker.isSuperWanderer() ? " is " : " is not ")
                         + "a Super Hiker!");

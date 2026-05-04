@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1">
+    <zoom_level>10</zoom_level>
+    <element>
+        <id>UMLClass</id>
+        <coordinates>
+            <x>280</x>
+            <y>40</y>
+            <w>320</w>
+            <h>220</h>
+        </coordinates>
+        <panel_attributes>&lt;&lt;abstract&gt;&gt;
+Vehicle
+--
+-licensePlate: String
+-{static} numberOfVehicles: int
+--
++Vehicle(licensePlate: String)
++getLicensePlate(): String
++setLicensePlate(licensePlate: String): void
++{abstract} getRentalPrice(): double
++{static} getNumberOfVehicles(): int
++toString(): String</panel_attributes>
+        <additional_attributes/>
+    </element>
+    <element>
+        <id>UMLClass</id>
+        <coordinates>
+            <x>80</x>
+            <y>360</y>
+            <w>340</w>
+            <h>210</h>
+        </coordinates>
+        <panel_attributes>Car
+--
+-numberOfSeats: int
+--
++Car(licensePlate: String, numberOfSeats: int)
++getNumberOfSeats(): int
++setNumberOfSeats(numberOfSeats: int): void
++getRentalPrice(): double
++toString(): String</panel_attributes>
+        <additional_attributes/>
+    </element>
+    <element>
+        <id>UMLClass</id>
+        <coordinates>
+            <x>500</x>
+            <y>360</y>
+            <w>360</w>
+            <h>210</h>
+        </coordinates>
+        <panel_attributes>Truck
+--
+-maximumWeight: double
+--
++Truck(licensePlate: String, maximumWeight: double)
++getMaximumWeight(): double
++setMaximumWeight(maximumWeight: double): void
++getRentalPrice(): double
++toString(): String</panel_attributes>
+        <additional_attributes/>
+    </element>
+    <element>
+        <id>Relation</id>
+        <coordinates>
+            <x>240</x>
+            <y>250</y>
+            <w>200</w>
+            <h>130</h>
+        </coordinates>
+        <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+        <additional_attributes>180;10;10;110</additional_attributes>
+    </element>
+    <element>
+        <id>Relation</id>
+        <coordinates>
+            <x>480</x>
+            <y>250</y>
+            <w>200</w>
+            <h>130</h>
+        </coordinates>
+        <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+        <additional_attributes>10;10;180;110</additional_attributes>
+    </element>
+</diagram>
