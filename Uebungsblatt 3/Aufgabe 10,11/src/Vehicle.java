@@ -20,4 +20,8 @@ public abstract class Vehicle {
     public void setLicencePlate(String licencePlate) {
         this.licencePlate = licencePlate;
     }
+
+    public String toString() {
+        return "License plate: " + this.getLicencePlate();
+    }
 }
